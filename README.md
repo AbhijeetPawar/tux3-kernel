@@ -27,3 +27,13 @@ mpage_readpages_compressed()
 mpage_end_io()
 decompress_stride()
 
+Test:
+
+Set ENABLE_TRANSPARENT_COMPRESSION in newDefines.h
+make
+insmod tux3.ko
+
+Download Tux3 code for mkfs
+./tux3 mkfs <device>
+
+Mount and test!
